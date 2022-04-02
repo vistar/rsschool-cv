@@ -1,5 +1,6 @@
 :root {
   --main-color: #00a896;
+  --text-color: rgba(17, 17, 17, .56);
 }
 
 html {
@@ -13,13 +14,23 @@ body {
   font-family: Open Sans,sans-serif,system-ui;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(17, 17, 17, .56);
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4 {
   font-family: 'Merriweather', serif;
   color: var(--main-color);
   font-weight: 400;
+}
+
+a {
+  color: var(--main-color);
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: .8;
+  transition: all 0.5s;
 }
 
 .container {
@@ -34,6 +45,12 @@ h1, h2, h3, h4 {
 
 .section {
   width: 50%;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
