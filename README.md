@@ -1,1 +1,1 @@
-# rsschool-cv
+https://vistar.github.io/rsschool-cv/
